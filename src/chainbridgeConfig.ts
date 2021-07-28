@@ -10,7 +10,7 @@ export type TokenConfig = {
   isNativeWrappedToken?: boolean;
 };
 
-export type ChainType = "Ethereum" | "Substrate";
+export type ChainType = "Ethereum" | "Ethereum";
 
 export type BridgeConfig = {
   networkId?: number;
@@ -94,34 +94,34 @@ export const chainbridgeConfig: ChainbridgeConfig = {
     //   ],
     // },
     {
-      chainId: 0,
-      networkId: 42,
+      chainId: 3,
+      networkId: 3,
       name: "Ethereum",
       decimals: 18,
-      bridgeAddress: "0x478ab279Ac5F4bd69382D34cF2382606E6208eFc",
-      erc20HandlerAddress: "0x3483c3a1Af5e78AE5AaB07de3Ea57b6F3877745F",
-      rpcUrl: "wss://kovan.infura.io/ws/v3/e199aa0da7e54bd9be94de96ea753127",
+      bridgeAddress: "0x50812B79876617dE375D2A1CBFdBF136f3f45324",
+      erc20HandlerAddress: "0xAD9268BAfD5C97aa3324cFF0D716eA6583878bdb",
+      rpcUrl: "wss://ropsten.infura.io/ws/v3/331e37af33a04d98be2802d3e13690b9",
       type: "Ethereum",
       nativeTokenSymbol: "ETH",
       tokens: [
         {
-          address: "0x2726A258f88b4e5B3a251e3d91594c527E10494D",
-          name: "wCFG",
-          symbol: "wCFG",
+          address: "0x5D6198c15a2c325c16d6241C2a43D1FF7f0FBEa4",
+          name: "WEENUS",
+          symbol: "WEENUS",
           imageUri: ETHIcon,
           resourceId:
-            "0x00000000000000000000000000000009e974040e705c10fb4de576d6cc261900",
+            "0x000000000000000000000000000000c76ebe4a02bbc34786d860b355f5a5ce00",
         },
       ],
     },
     {
-      chainId: 1,
-      networkId: 2,
-      name: "Centrifuge - Amber",
+      chainId: 4,
+      networkId: 4,
+      name: "Rinkeby",
       decimals: 18,
-      rpcUrl: "wss://fullnode.amber.centrifuge.io",
-      type: "Substrate",
-      nativeTokenSymbol: "CFG",
+      rpcUrl: "wss://rinkeby.infura.io/ws/v3/1be1de1c61b74c6a927fc6ac5f932e26",
+      type: "Ethereum",
+      nativeTokenSymbol: "ETH",
       chainbridgePalletName: "chainBridge",
       bridgeFeeFunctionName: "tokenTransferFee",
       transferPalletName: "palletBridge",
@@ -129,9 +129,9 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       typesFileName: "bridgeTypes.json",
       tokens: [
         {
-          address: "substrate-native",
-          name: "CFG",
-          symbol: "CFG",
+          address: "0x5D6198c15a2c325c16d6241C2a43D1FF7f0FBEa4",
+          name: "WEENUS",
+          symbol: "WEENUS",
           resourceId: "substrate-native",
         },
       ],
